@@ -1,0 +1,370 @@
+<<<<<<< HEAD
+/* styles.css */
+
+/* Global Styles */
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4cece;
+  }
+  
+  /* Header Section */
+  header {
+    position: relative;
+    height: 400px;
+    text-align: center;
+  }
+
+
+  .logo{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(185, 26, 26);
+    text-align: left;
+   
+
+}
+  
+nav{
+  color: black;
+  display: flex;
+  justify-content:space-around ;
+  align-items: center;
+  text-decoration: none;
+ padding-right:5% ;
+ margin-top: 2%;
+
+}
+
+
+.Menu a{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(194, 19, 19);
+  padding: 10px 20px;
+  position: relative;
+}
+
+.Menu a:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height:100%;
+border-bottom: 2px solid indianred;
+transition: 0.3s linear;
+
+}
+
+.Menu a:hover:before{
+  width: 90%;
+
+}
+
+.Orders a{
+  text-decoration: none;
+  padding: 10px 20px;
+  color: whitesmoke;
+ font-size: 20px;
+ background: indianred;
+ border-radius: 10px;
+transition: 0.3s linear;
+
+
+}
+Orders a:hover{
+  background: transparent;
+  border: 1px solid indianred;
+  color: rgba(203, 9, 9, 0.854);
+  
+}
+
+.tag{
+  text-align: center;
+  margin-top: -15%;
+  padding-bottom: 8%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(223, 43, 46);
+  font-size: 2rem;
+}
+
+
+
+  
+  
+
+  
+  .hero-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(194, 63, 63);
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF5A5F;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .features h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    display: inline-block;
+    width: 350px;
+    margin: 20px;
+  }
+  
+  .feature img {
+    width: 100%;
+    max-height: 200px;
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  
+  /* Product Showcase Section */
+  .product-showcase {
+    padding: 55px;
+    text-align: center;
+    margin:auto;
+  }
+  
+  .product-showcase h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .product img {
+   
+    max-height: 200px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+  
+  .details-button {
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 8px 16px;
+    color: whitesmoke;
+   font-size: 18px;
+   background: indianred;
+   border-radius: 8px;
+ transition: 0.3s linear;
+  }
+
+  .details-button:hover{
+    background: transparent;
+    border: 1px solid indianred;
+    color: rgba(203, 9, 9, 0.854);
+  }
+
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .testimonial img {
+    width: 100%;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial cite {
+    font-weight: bold;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 100px;
+    text-align: center;
+    background-color: #e50e27;
+    color: white;
+  }
+  
+  .cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .cta-button{
+    border-radius: 10px;
+  }
+
+  .cta-button:hover{
+    background: transparent;
+    border: 1px solid indianred;
+    color: rgb(210, 210, 220);
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #f4f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  footer nav ul li a {
+    color: #666666;
+    text-decoration: none;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  
+  
+  
+=======
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-family:'Rubik', sans-serif;;
+}
+
+.container{
+background-color: whitesmoke;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.calculator{
+    background:#7f3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.calculator form input {
+    border:2px solid black;
+    outline: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin: 5px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3);
+     font-size: 23px;
+     background: transparent;
+     color: white;
+     cursor: pointer;
+}
+
+.calculator form input:hover{
+    transform: scale(1.1);
+    transition:.3s ease all;
+    opacity:.8;
+
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background-color: rgb(32, 41, 60);
+}
+
+
+>>>>>>> 3af65be (New project to pust to github)
